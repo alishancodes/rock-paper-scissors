@@ -4,33 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script type="module" src="script.js"></script>
+    <script type="module" src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 
-    <style>
-        .score {
-            white-space: pre-line;
-            /*
-            white-space: pre-line tells the browser:
-            "Keep the newline characters (\n) as actual line breaks."
-            */
-        }
-
-        div {
-            padding : 20px;
-        }
-
-        .options > button {
-            padding : 20px;
-            margin-right : 20px;
-        }
-
-    </style>
 </head>
 <body>
     <div class = "options">
         <button id = "rock">Rock</button>
         <button id = "paper">Paper</button>
         <button id = "scissors">Scissors</button>
+        <img id = "toggle" src="./nightMode.png" alt="Day and night icons created by POD Gladiator - Flaticon">
     </div>    
 
     <div class = score></div>

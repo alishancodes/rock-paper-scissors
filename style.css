@@ -1,0 +1,41 @@
+body {
+    background-color: #FFF8E7;
+    color: #3B372F;
+    font-weight:bolder;
+}
+
+button {
+    background-color: #F5E8C8;
+    color: #3B372F;
+    border: 2px solid #E5D5AD;
+}
+
+.score {
+    white-space: pre-line;
+    /*
+    white-space: pre-line tells the browser:
+     Keep the newline characters (\n) as actual line breaks."
+    */
+}
+
+.options>button {
+    padding: 20px;
+    margin-right: 20px;
+}
+
+img {
+    height: 70px;
+    width: auto;
+    margin-left: auto;
+    padding-right: 90px;
+}
+
+.options {
+    display: flex;
+    margin: 30px;
+}
+
+#restart,
+.score {
+    margin: 30px;
+}

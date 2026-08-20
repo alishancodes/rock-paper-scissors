@@ -99,3 +99,34 @@ function final(humanScore, computerScore) {
 restartBtn.addEventListener("click", () => {
     location.reload();
 });
+
+// to toggle b/w night and day mode
+const toggle = document.querySelector("#toggle");
+let mode = "day";
+
+toggle.addEventListener("click" , () => {
+    if(mode === "day"){
+    document.body.style.backgroundColor = "#FFF8E7";
+    document.body.style.color = "#3B372F";
+
+    buttons.forEach(button => {
+        button.style.backgroundColor = "#F5E8C8";
+        button.style.color = "#3B372F";
+        button.style.border = "2px solid #E5D5AD";
+    }); 
+
+        mode = "night";
+    }
+    else{
+        document.body.style.backgroundColor = "#18191A";
+        document.body.style.color = "#E6E6E3";
+
+        buttons.forEach(button => {
+            button.style.backgroundColor = "#292A2B";
+            button.style.color = "#E6E6E3";
+            button.style.border = "2px solid #3A3B3C";
+        });
+
+        mode = "day";
+    }
+});
